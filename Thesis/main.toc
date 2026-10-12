@@ -1,0 +1,78 @@
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {greek}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {greek}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {greek}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {greek}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {greek}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {greek}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {greek}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {greek}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {greek}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {greek}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {greek}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {greek}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {greek}{}\relax 
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{\numberline {1}Theoretical Foundations of Spacetime and Geodesic Motion}{7}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Differential Geometry and Tensor Calculus}{7}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Curvature Tensors and the Einstein Field Equations}{8}{section.1.2}%
+\contentsline {section}{\numberline {1.3}The Geodesic Equation and the Variational Principle}{9}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Killing's Equation and Exact Conservation Laws}{9}{subsection.1.3.1}%
+\contentsline {section}{\numberline {1.4}Stationary, Axisymmetric Spacetimes and the Hamiltonian Formulation}{10}{section.1.4}%
+\contentsline {section}{\numberline {1.5}The Kerr Geometry}{11}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}Horizon Structure and Ergosphere}{11}{subsection.1.5.1}%
+\contentsline {subsection}{\numberline {1.5.2}Null Geodesics and the Carter Constant}{11}{subsection.1.5.2}%
+\contentsline {section}{\numberline {1.6}Light Rings and the Mathematical Shadow}{12}{section.1.6}%
+\contentsline {section}{\numberline {1.7}Strong-Field Gravitational Lensing and Multiple Imaging}{12}{section.1.7}%
+\contentsline {chapter}{\numberline {2}Numerical Methods and Computational Algorithms}{15}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Theoretical Background: Well-Posedness and Error in ODE Integration}{15}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}The Initial Value Problem}{15}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Local Error, Global Error, and Convergence}{15}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Truncation Error, Round-off, and the Accuracy Floor}{15}{subsection.2.1.3}%
+\contentsline {section}{\numberline {2.2}Automatic Differentiation vs. Finite Differences}{16}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Dual Numbers and the Chain Rule}{16}{subsection.2.2.1}%
+\contentsline {section}{\numberline {2.3}Geometric Integration via Manifold Projection}{17}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}The Problem of Invariant Drift}{17}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Projection via Lagrange Multipliers}{17}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Multidimensional Newton-Raphson Iterative Solver}{18}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}Convergence of the Newton--Raphson Iteration}{19}{subsection.2.3.4}%
+\contentsline {paragraph}{Theorem (quadratic convergence).}{19}{section*.5}%
+\contentsline {subsection}{\numberline {2.3.5}Regularity of the Constraints}{19}{subsection.2.3.5}%
+\contentsline {subsection}{\numberline {2.3.6}Projection Versus Alternative Stabilization Strategies}{19}{subsection.2.3.6}%
+\contentsline {section}{\numberline {2.4}High-Order Adaptive Integration}{20}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Butcher Structure and Order Conditions}{20}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Embedded Pairs and Local Error Estimation}{20}{subsection.2.4.2}%
+\contentsline {chapter}{\numberline {3}Setup}{21}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Backward Ray Tracing and Initial Conditions}{21}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Choice of Coordinate System}{21}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Grid Construction and Initial Conditions}{21}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}UV Mapping and Calibration}{22}{subsection.3.1.3}%
+\contentsline {chapter}{\numberline {4}Results}{23}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Validation of Numerical Stability}{23}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Fundamental Photon Orbits and Dynamics}{24}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Scattering Orbits}{24}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Bound Spiral Orbits (Transient Capture)}{25}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.4}Direct Capture Orbits}{26}{subsection.4.1.4}%
+\contentsline {section}{\numberline {4.2}Black Hole Shadow and Astrophysical Imaging}{27}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Gravitational Lensing of a Point Source}{27}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Shadow Morphology and Frame Dragging}{28}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Relativistic Accretion Disk and Radiative Transfer}{30}{subsection.4.2.3}%
+\contentsline {chapter}{\numberline {5}Conclusions and Future Prospects}{33}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Summary of Contributions}{33}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Future Research Directions}{34}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}GPU Acceleration and Real-Time Rendering}{34}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Extension to Alternative Metrics and Beyond-GR Theories}{34}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Template Generation and Parameter Estimation}{34}{subsection.5.2.3}%

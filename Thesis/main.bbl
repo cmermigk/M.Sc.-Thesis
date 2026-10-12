@@ -1,0 +1,20 @@
+\begin{thebibliography}{1}
+
+\bibitem{Griewank2008-dl}
+A.~Griewank and A.~Walther.
+\newblock {\em Evaluating derivatives}.
+\newblock Society for Industrial and Applied Mathematics, Cambridge, TAS,
+  Australia, 2 edition, Jan. 2008.
+
+\bibitem{Hairer2006-te}
+E.~Hairer, C.~Lubich, and G.~Wanner.
+\newblock {\em Geometric numerical integration}.
+\newblock Springer Series in Computational Mathematics. Springer, Berlin,
+  Germany, 2 edition, Feb. 2006.
+
+\bibitem{Wengert1964-sd}
+R.~E. Wengert.
+\newblock A simple automatic derivative evaluation program.
+\newblock {\em Commun. ACM}, 7(8):463--464, Aug. 1964.
+
+\end{thebibliography}
