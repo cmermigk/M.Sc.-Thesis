@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2026.8.27)  12 OCT 2026 23:14
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2026.8.27)  20 OCT 2026 21:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1721,27 +1721,27 @@ Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;m
 apping=tex-text;" at 6.1pt
  -> /usr/share/texlive/texmf-dist/fonts/opentype/public/libertine/LinLibertine_
 R.otf
- [10] [11] [12] [13] [14
+ [10] [11] [12] [13] [14]
+Chapter 2.
+[15
 
 ]
-Chapter 2.
-[15]
 File: figures/FDvsAD.png Graphic file (type bmp)
 <figures/FDvsAD.png>
 
-Overfull \hbox (6.6378pt too wide) in paragraph at lines 489--490
+Overfull \hbox (6.6378pt too wide) in paragraph at lines 536--537
  [][] 
  []
 
 [16] [17]
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/it' will be
-(Font)              scaled to size 8.0pt on input line 537.
+(Font)              scaled to size 8.0pt on input line 584.
 Requested font "[LinLibertine_RI.otf]/OT:script=latn;language=dflt;+tnum;+lnum;
 mapping=tex-text;" at 8.0pt
  -> /usr/share/texlive/texmf-dist/fonts/opentype/public/libertine/LinLibertine_
 RI.otf
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/it' will be
-(Font)              scaled to size 6.1pt on input line 537.
+(Font)              scaled to size 6.1pt on input line 584.
 Requested font "[LinLibertine_RI.otf]/OT:script=latn;language=dflt;+tnum;+lnum;
 mapping=tex-text;" at 6.1pt
  -> /usr/share/texlive/texmf-dist/fonts/opentype/public/libertine/LinLibertine_
@@ -1749,7 +1749,7 @@ RI.otf
  [18] [19] [20]
 Chapter 3.
 
-Overfull \hbox (2.32515pt too wide) in paragraph at lines 670--671
+Overfull \hbox (2.32515pt too wide) in paragraph at lines 717--718
 \TU/LinLibertine(0)/m/n/10.95 We begin by defining the observer’s position. In 
 our framework, we work any coordinates spherical $\LMS/ntxsy/m/n/10.95 ¹\OML/nx
 lmi/m/it/10.95 t; r; ^^R; ^^^\LMS/ntxsy/m/n/10.95 º$
@@ -1812,12 +1812,6 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [31]
 [32]
 Chapter 5.
-
-Overfull \hbox (9.27795pt too wide) in paragraph at lines 884--885
-\TU/LinLibertine(0)/m/n/10.95 transient capture orbits, the framework successfu
-lly maintained conserved quantities at the machine-precision
- []
-
 [33
 
 ] [34] (./main.bbl) [35
@@ -1826,22 +1820,16 @@ lly maintained conserved quantities at the machine-precision
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 906E6CC1D3FF3B1659DDDB17D15A35C1;13008
-(rerunfilecheck)             After:  D73E9B6F3AFA799E559E4F13DE598A48;12817.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 5243DC55ACBC8FC6F470BA0DBB2E4259;13028.
  ) 
 Here is how much of TeX's memory you used:
- 30657 strings out of 476191
- 598622 string characters out of 5812072
- 888612 words of memory out of 5000000
- 50934 multiletter control sequences out of 15000+600000
+ 30664 strings out of 476191
+ 598768 string characters out of 5812072
+ 889081 words of memory out of 5000000
+ 50941 multiletter control sequences out of 15000+600000
  491025 words of font info for 128 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 88i,10n,124p,1186b,517s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 88i,16n,124p,1178b,490s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on main.pdf (35 pages).

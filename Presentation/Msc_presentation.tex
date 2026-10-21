@@ -41,14 +41,14 @@
 		\vspace{0.3cm}
 		\begin{block}{The Central Question}
 			\textit{What would an observer actually see when looking at a black hole?} \\[0.2cm]
-			Answering this requires solving the geodesic equation with \textbf{machine-precision accuracy} in a chaotic, strong-field environment.
+			Answering this requires solving the geodesic equation with \textbf{machine-precision accuracy} in an unstable, strong-field environment.
 		\end{block}
 	\end{frame}
 	
 	\begin{frame}{The Computational Challenge}
 		\begin{itemize}
 			\item \textbf{Goal:} Trace millions of photon trajectories backwards from the observer to the source.
-			\item \textbf{Problem:} Near the photon sphere, trajectories are \textbf{chaotic} (Lyapunov instability).
+			\item \textbf{Problem:} Near the photon sphere, trajectories are \textbf{unstable} (Lyapunov instability).
 			\item Tiny numerical errors $\rightarrow$ exponential divergence $\rightarrow$ unphysical results.
 			\item \textbf{Requirement:} Machine-precision accuracy over long integration times.
 		\end{itemize}
@@ -111,7 +111,7 @@
 				\item Start with input $x = a + 1\cdot\epsilon$ (value $a$, derivative $1$).
 				\item Apply operations (add, multiply, sin, exp, etc.) using dual number rules.
 				\item Each operation propagates both value and derivative.
-				\item Final result: $f(a) + f'(a)\epsilon$ --- the coefficient of $\epsilon$ is the exact derivative!
+				\item Final result: $f(a) + f'(a)\epsilon$ - the coefficient of $\epsilon$ is the exact derivative!
 			\end{enumerate}
 			\item \textbf{Chain rule:} Applied algebraically to every operation:
 			\begin{itemize}
@@ -190,7 +190,7 @@
 			\end{equation}
 			\item \textbf{Solution:}
 			\begin{equation}
-				\bm{y}^* = \tilde{\bm{y}} - \bm{J}^T \bm{\lambda}, \quad \bm{J} = \frac{\partial \bm{g}}{\partial \bm{y}}
+				\bm{y}^* = \tilde{\bm{y}} + \bm{J}^T \bm{\lambda}, \quad \bm{J} = \frac{\partial \bm{g}}{\partial \bm{y}}
 			\end{equation}
 			\item \textbf{Key property:} Correction is \textit{\textbf{orthogonal}} to the physical flow - no artificial damping.
 		\end{itemize}
@@ -400,18 +400,18 @@
 
 	\begin{frame}{Plasma Model: Thin Accretion Disk}
 		\begin{itemize}
-			\item \textbf{Physical setup:} Geometrically thin, optically thick accretion disk in the equatorial plane ($\theta = \pi/2$).
+			\item \textbf{Physical setup:} Geometrically thick, optically thin accretion disk in the equatorial plane ($\theta = \pi/2$).
 			\item \textbf{Emission profile:} Local emissivity $\epsilon(r)$ follows an exponential density profile, peaking near the Innermost Stable Circular Orbit (ISCO) for each spin parameter..
 			\item \textbf{Radiative transfer:} The observed intensity along each ray is:
 			\begin{equation}
-				I_{\text{obs}} = \int g^4 \, \epsilon(r) \, d\lambda
+				I_{\text{obs}} = \int g^2 \, \epsilon(r) \, d\lambda
 			\end{equation}
 			where $g$ is the relativistic redshift factor.
 		\end{itemize}
 		\vspace{0.3cm}
 		\begin{block}{Key Relativistic Effects}
 			\begin{itemize}
-				\item \textbf{Doppler beaming ($g^4$):} Approaching plasma appears much brighter than receding plasma.
+				\item \textbf{Doppler effect ($g^2$):} Approaching plasma appears much brighter than receding plasma.
 				\item \textbf{Gravitational lensing:} Light from the far side of the disk is bent over and under the black hole.
 				\item \textbf{Photon ring:} Multiple windings create a self-similar hierarchy of sub-rings near the shadow boundary.
 			\end{itemize}
@@ -463,9 +463,7 @@
 	
 	\begin{frame}
 		\centering
-		\Huge \textbf{Thank You!} \\
-		\vspace{1cm}
-		\Large Questions?
+		\Huge \textbf{Thank You!} 
 	\end{frame}
 	
 \end{document}
