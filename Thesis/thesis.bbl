@@ -1,0 +1,94 @@
+\begin{thebibliography}{10}
+
+\bibitem{Bezanson2017}
+Jeff Bezanson, Alan Edelman, Stefan Karpinski, and Viral~B Shah.
+\newblock Julia: A fresh approach to numerical computing.
+\newblock {\em SIAM review}, 59(1):65--98, 2017.
+
+\bibitem{Boyer1967}
+Robert~H Boyer and Richard~W Lindquist.
+\newblock Maximal analytic extension of the kerr metric.
+\newblock {\em Journal of Mathematical Physics}, 8(2):265--281, 1967.
+
+\bibitem{Chandrasekhar1983}
+Subrahmanyan Chandrasekhar.
+\newblock {\em The mathematical theory of black holes}.
+\newblock Oxford University Press, 1983.
+
+\bibitem{Cunningham1975}
+Christopher~T Cunningham.
+\newblock The effects of redshifts and focusing on the spectrum of an accretion
+  disk around a kerr black hole.
+\newblock {\em The Astrophysical Journal}, 202:788--802, 1975.
+
+\bibitem{EHT2019_V}
+{Event Horizon Telescope Collaboration}.
+\newblock First m87 event horizon telescope results. v. physical origin of the
+  asymmetric ring.
+\newblock {\em The Astrophysical Journal Letters}, 875(1):L5, 2019.
+
+\bibitem{Falcke2000}
+Heino Falcke, Fulvio Melia, and Eric Agol.
+\newblock Viewing the shadow of the black hole at the galactic center.
+\newblock {\em The Astrophysical Journal Letters}, 528(1):L13, 2000.
+
+\bibitem{Gralla2019}
+Samuel~E Gralla, Daniel~E Holz, and Robert~M Wald.
+\newblock Black hole shadows, photon rings, and lensing rings.
+\newblock {\em Physical Review D}, 100(2):024018, 2019.
+
+\bibitem{Griewank2008-dl}
+Andreas Griewank and Andrea Walther.
+\newblock {\em Evaluating derivatives}.
+\newblock Society for Industrial and Applied Mathematics, Cambridge, TAS,
+  Australia, 2 edition, January 2008.
+
+\bibitem{Hairer2006-te}
+Ernst Hairer, Christian Lubich, and Gerhard Wanner.
+\newblock {\em Geometric numerical integration}.
+\newblock Springer Series in Computational Mathematics. Springer, Berlin,
+  Germany, 2 edition, February 2006.
+
+\bibitem{Kerr1963}
+Roy~P Kerr.
+\newblock Gravitational field of a spinning mass as an example of algebraically
+  special metrics.
+\newblock {\em Physical Review Letters}, 11(5):237--238, 1963.
+
+\bibitem{Luminet1979}
+Jean-Pierre Luminet.
+\newblock Image of a spherical black hole with thin accretion disk.
+\newblock {\em Astronomy and Astrophysics}, 75:228--235, 1979.
+
+\bibitem{Misner1973}
+Charles~W Misner, Kip~S Thorne, and John~Archibald Wheeler.
+\newblock {\em Gravitation}.
+\newblock W. H. Freeman and Company, San Francisco, 1973.
+
+\bibitem{Revels2016}
+Jarrett Revels, Miles Lubin, and Theodore Papamarkou.
+\newblock Forward-mode automatic differentiation in julia.
+\newblock {\em arXiv preprint arXiv:1607.07892}, 2016.
+
+\bibitem{Shakura1973}
+Nikolai~I Shakura and Rashid~A Sunyaev.
+\newblock Black holes in binary systems. observational appearance.
+\newblock {\em Astronomy and Astrophysics}, 24:337--355, 1973.
+
+\bibitem{Synge1966}
+John~Lighton Synge.
+\newblock The escape of photons from gravitationally intense stars.
+\newblock {\em Monthly Notices of the Royal Astronomical Society},
+  131(3):463--466, 1966.
+
+\bibitem{Wald1984}
+Robert~M Wald.
+\newblock {\em General Relativity}.
+\newblock University of Chicago Press, 1984.
+
+\bibitem{Wengert1964-sd}
+R~E Wengert.
+\newblock A simple automatic derivative evaluation program.
+\newblock {\em Commun. ACM}, 7(8):463--464, August 1964.
+
+\end{thebibliography}

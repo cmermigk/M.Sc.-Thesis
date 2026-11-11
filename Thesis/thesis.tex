@@ -97,7 +97,7 @@
 
 \section*{Abstract}
 
-In this thesis, we present a robust and efficient computational framework for the numerical simulation and visualization of relativistic ray tracing in the strong gravitational regime of rotating Kerr black holes. Developed entirely in the Julia programming language, our methodology employs a backward ray-tracing paradigm to map the observer's celestial sphere to the spacetime geometry surrounding the event horizon. To address the extreme numerical sensitivity inherent in near-horizon photon dynamics, we implement two advanced computational techniques.\\
+In this thesis, we present a robust and efficient computational framework for the numerical simulation and visualization of relativistic ray tracing in the strong gravitational regime of rotating Kerr black holes. Developed entirely in the Julia programming language \cite{Bezanson2017}, our methodology employs a backward ray-tracing paradigm to map the observer's celestial sphere to the spacetime geometry surrounding the event horizon. To address the extreme numerical sensitivity inherent in near-horizon photon dynamics, we implement two advanced computational techniques.\\
 First, we utilize Forward-Mode Automatic Differentiation to compute exact metric derivatives and Christoffel symbols to machine precision, entirely eliminating the truncation and round-off errors associated with traditional finite difference methods. \\
 Second, we couple a high-order adaptive Runge-Kutta integrator with a geometric Manifold Projection algorithm that strictly enforces the physical invariants of the phase space - the null condition, energy, and axial angular momentum - suppressing invariant drift even for highly unstable trajectories.\\
 We systematically validate the numerical stability of our integrator by resolving fundamental photon orbits, including scattering, direct capture, and bound spirals near the photon sphere, demonstrating that conserved quantities are maintained at the machine-precision limit. On a standard 16-core laptop, the framework processes computationally demanding trajectories at an average rate of one million rays per hour.\\
@@ -112,17 +112,44 @@ We systematically validate the numerical stability of our integrator by resolvin
 Πρώτον, αξιοποιούμε την Αυτόματη Παραγώγιση προς τα εμπρός \selectlanguage{english}(Forward-Mode Automatic Differentiation)\selectlanguage{greek} για τον ακριβή υπολογισμό των παραγώγων του μετρικού τανυστή και των συμβόλων Christoffel με ακρίβεια μηχανής, εξαλείφοντας πλήρως τα σφάλματα αποκοπής και στρογγυλοποίησης που συνοδεύουν τις παραδοσιακές μεθόδους πεπερασμένων διαφορών.\\
 Δεύτερον, συνδυάζουμε έναν ολοκληρωτή Runge-Kutta υψηλής τάξης και προσαρμοστικού βήματος με έναν γεωμετρικό αλγόριθμο Προβολής Πολλαπλότητας \selectlanguage{english}(Manifold Projection)\selectlanguage{greek}. Η μέθοδος αυτή επιβάλλει αυστηρά τα φυσικά αναλλοίωτα του χώρου φάσεων -τη φωτονική συνθήκη \selectlanguage{english}(null condition)\selectlanguage{greek}, την ενέργεια και την αξονική στροφορμή- καταστέλλοντας την αριθμητική απόκλιση \selectlanguage{english}(drift)\selectlanguage{greek} ακόμη και για εξαιρετικά ασταθείς τροχιές.\\
 Επικυρώνουμε συστηματικά την αριθμητική ευστάθεια του ολοκληρωτή επιλύοντας θεμελιώδεις τροχιές φωτονίων, συμπεριλαμβανομένων της σκέδασης, της άμεσης σύλληψης και των δεσμευμένων ελικοειδών τροχιών κοντά στη σφαίρα των φωτονίων, αποδεικνύοντας ότι τα διατηρούμενα μεγέθη διατηρούνται στα όρια της ακρίβειας της μηχανής. Σε έναν τυπικό φορητό υπολογιστή με 16 πυρήνες, το πλαίσιο επεξεργάζεται υπολογιστικά απαιτητικές τροχιές με μέσο ρυθμό ένα εκατομμύριο ακτίνες ανά ώρα.\\
-Τέλος, εφαρμόζουμε το πλαίσιο στην αστροφυσική απεικόνιση, αναπαράγοντας επιτυχώς τη χαρακτηριστική ασύμμετρη σκιά σχήματος «D» μιας σχεδόν ακραίας \selectlanguage{english}(near-extremal)\selectlanguage{greek} μαύρης τρύπας Kerr, η οποία οφείλεται στη συμπαρασυρμή πλαισίου \selectlanguage{english}(frame-dragging)\selectlanguage{greek}. Ενσωματώνοντας ένα μοντέλο γεωμετρικά λεπτού δίσκου προσαύξησης με σχετικιστική μεταφορά ακτινοβολίας, αναδεικνύουμε κρίσιμα φαινόμενα όπως η ενίσχυση Doppler \selectlanguage{english}(Doppler effect)\selectlanguage{greek}, η βαρυτική εστίαση \selectlanguage{english}(gravitational lensing)\selectlanguage{greek} και η ιεραρχία των φωτονικών υπο-δακτυλίων ανώτερης τάξης. Η ανεξαρτησία από τη μορφή της μετρικής \selectlanguage{english}(metric-agnostic nature)\selectlanguage{greek} και η αυστηρή γεωμετρική ολοκλήρωση το καθιστούν ένα ισχυρό εργαλείο γενικής χρήσης για την ερμηνεία παρατηρήσεων σε κλίμακα ορίζοντα από τρέχουσες και μελλοντικές συμβολομετρικές εκστρατείες, όπως το Τηλεσκόπιο Ορίζοντα Γεγονότων \selectlanguage{english}(Event Horizon Telescope - EHT)\selectlanguage{greek}.
+Τέλος, εφαρμόζουμε το πλαίσιο στην αστροφυσική απεικόνιση, αναπαράγοντας επιτυχώς τη χαρακτηριστική ασύμμετρη σκιά σχήματος «D» μιας σχεδόν ακραίας \selectlanguage{english}(near-extremal)\selectlanguage{greek} μαύρης τρύπας Kerr, η οποία οφείλεται στη συμπαράσυρση πλαισίου \selectlanguage{english}(frame-dragging)\selectlanguage{greek}. Ενσωματώνοντας ένα μοντέλο γεωμετρικά λεπτού δίσκου προσαύξησης με σχετικιστική διάδοση ακτινοβολίας, αναδεικνύουμε κρίσιμα φαινόμενα όπως το φαινόμενο Doppler \selectlanguage{english}(Doppler effect)\selectlanguage{greek}, η βαρυτική εστίαση \selectlanguage{english}(gravitational lensing)\selectlanguage{greek} και η ιεραρχία των φωτονικών υπο-δακτυλίων ανώτερης τάξης. Η ανεξαρτησία από τη μορφή της μετρικής \selectlanguage{english}(metric-agnostic nature)\selectlanguage{greek} και η αυστηρή γεωμετρική ολοκλήρωση το καθιστούν ένα ισχυρό εργαλείο γενικής χρήσης για την ερμηνεία παρατηρήσεων σε κλίμακα ορίζοντα από τρέχουσες και μελλοντικές συμβολομετρικές εκστρατείες, όπως το Τηλεσκόπιο Ορίζοντα Γεγονότων \selectlanguage{english}(Event Horizon Telescope - EHT)\selectlanguage{greek}.
 
 \selectlanguage{english}
 \newpage
 
-
+\thispagestyle{empty} 
 \section*{Acknowledgements}
 
-I would like to express my deepest gratitude towards my supervisor, Assistant Prof. George Pappas, for his invaluable guidance, patience, and support. Without his insights, none of this work would have been possible. 
+I would like to express my deepest gratitude towards my supervisor, Assistant Prof. George Pappas, for his invaluable guidance, patience, and support throughout this journey. His insights and mentorship have been fundamental to the completion of this work.
 
-My appreciation also goes to blah blah blah
+My sincere thanks go to my friend Giorgos, for the countless hours we spent together in the office writing code and discussing results. Having a study buddy who constantly pushed me made the most demanding parts of this process not only manageable but genuinely enjoyable.
+
+My heartfelt appreciation goes to Ntina, who has been by my side from the very beginning. Her unwavering support, understanding, and belief in me have been my greatest source of strength during the most challenging moments of this endeavor.
+
+Finally, I owe everything to my parents, for their endless love, sacrifices, and for providing me with every opportunity to pursue my dreams.
+
+This achievement is as much theirs as it is mine. Thank you.
+\newpage
+\thispagestyle{empty} 
+\vspace*{\fill} 
+\begin{flushright}
+
+	\large\textsc{Do not go gentle into that good night}\\[0.3em]
+	\normalsize\textit{Dylan Thomas}\\[2em]
+	
+	\large
+	\textit{``Do not go gentle into that good night,\\
+		Old age should burn and rave at close of day;\\
+		Rage, rage against the dying of the light.\\[1.5em]
+		Wild men who caught and sang the sun in flight,\\
+		And learn, too late, they grieved it on its way,\\
+		Do not go gentle into that good night.\\[1.5em]
+		Grave men, near death, who see with blinding sight\\
+		Blind eyes could blaze like meteors and be gay,\\
+		Rage, rage against the dying of the light.''}
+\end{flushright}
+\vspace{2cm} % Περιθώριο στο κάτω μέρος
+
 
 \newpage
 \tableofcontents
@@ -132,7 +159,7 @@ My appreciation also goes to blah blah blah
 
 \section{Differential Geometry and Tensor Calculus}
 
-The mathematical formulation of the General Theory of Relativity posits that gravitational interactions are not mediated by conventional Newtonian forces, but are manifestations of the intrinsic curvature of a four-dimensional pseudo-Riemannian spacetime manifold $\mathcal{M}$. A differentiable manifold $\mathcal{M}$ of dimension $n=4$ is a topological space locally homeomorphic to Euclidean space $\mathbb{R}^4$, equipped with an atlas of overlapping charts $(U_\alpha, \phi_\alpha)$.
+The mathematical formulation of the General Theory of Relativity posits that gravitational interactions are not mediated by conventional Newtonian forces, but are manifestations of the intrinsic curvature of a four-dimensional pseudo-Riemannian spacetime manifold $\mathcal{M}$ \cite{Misner1973, Wald1984}. A differentiable manifold $\mathcal{M}$ of dimension $n=4$ is a topological space locally homeomorphic to Euclidean space $\mathbb{R}^4$, equipped with an atlas of overlapping charts $(U_\alpha, \phi_\alpha)$.
 
 Let $x^\mu = (x^0, x^1, x^2, x^3) \equiv (t, r, \theta, \phi)$ denote a local coordinate system. When transitioning to another overlapping chart $\tilde{x}^\mu$, the coordinate transformation functions are smooth ($C^\infty$) and possess a non-singular Jacobian matrix. The fundamental geometric object dictating distances and causality on $\mathcal{M}$ is the symmetric metric tensor $g_{\mu\nu} = g_{\nu\mu}$. The invariant infinitesimal line element $ds^2$ is given by:
 \begin{equation}
@@ -248,7 +275,7 @@ f(\lambda)$ the equation acquires a friction-like term,
 \begin{equation}
     \ddot{x}^\mu + \tensor{\Gamma}{^\mu_{\alpha\beta}}\dot{x}^\alpha\dot{x}^\beta
     = \kappa(\lambda)\, \dot{x}^\mu, \qquad
-    \kappa = \frac{f''(\lambda)}{\left[f'(\lambda)\right]^2},
+    \kappa = -\frac{f''(\lambda)}{\left[f'(\lambda)\right]^2},
 \end{equation}
 which can be removed iff $f$ is affine, $f'' = 0$. The remaining freedom is a global
 rescaling $\lambda \to c\,\lambda$, which rescales $\dot{x}^\mu \to \dot{x}^\mu/c$ but
@@ -346,7 +373,7 @@ The functions \(h_{\pm}\) play a central role in determining the existence and s
 
 \section{The Kerr Geometry}
 
-The exterior geometry of a rotating, uncharged black hole is uniquely determined by its mass \(M\) and spin angular momentum \(J\) (No-Hair Theorem). In standard Boyer-Lindquist coordinates $(t, r, \theta, \phi)$, the Kerr metric takes the explicit form:
+The exterior geometry of a rotating, uncharged black hole is uniquely determined by its mass \(M\) and spin angular momentum \(J\) (No-Hair Theorem) \cite{Chandrasekhar1983}. In standard Boyer-Lindquist coordinates $(t, r, \theta, \phi)$ \cite{Kerr1963, Boyer1967}, the Kerr metric takes the explicit form:
 \begin{equation}
     ds^2 = -\left(1 - \frac{2Mr}{\Sigma}\right) dt^2 - \frac{4Mar\sin^2\theta}{\Sigma} dt d\phi + \frac{\Sigma}{\Delta} dr^2 + \Sigma d\theta^2 + \left(r^2 + a^2 + \frac{2Ma^2r\sin^2\theta}{\Sigma}\right)\sin^2\theta d\phi^2,
 \end{equation}
@@ -396,7 +423,7 @@ Bound null geodesics that remain confined to a constant radial coordinate $r = r
     \mathcal{R}(r) = 0 \quad \text{and} \quad \frac{d\mathcal{R}}{dr}(r) = 0.
 \end{equation}
 
-This can be recast in terms of the effective potentials \(h_{\pm}\) introduced in Section 1.4. The light rings (unstable circular photon orbits) correspond to the extrema or saddle points of the \(h_{\pm}\) functions. For the Kerr metric, the radius of the prograde and retrograde photon rings, as well as the corresponding critical impact parameters \(b_c\), can be derived analytically. The locus of these critical impact parameters on the observer's plane defines the mathematical boundary of the black hole shadow.
+This can be recast in terms of the effective potentials \(h_{\pm}\) introduced in Section 1.4. The light rings (unstable circular photon orbits) correspond to the extrema or saddle points of the \(h_{\pm}\) functions. For the Kerr metric, the radius of the prograde and retrograde photon rings, as well as the corresponding critical impact parameters \(b_c\), can be derived analytically. The locus of these critical impact parameters on the observer's plane defines the mathematical boundary of the black hole shadow \cite{Synge1966, Falcke2000, Gralla2019}.
 
 In the absence of a Carter constant (i.e., in non-Kerr metrics), this analytical formulation breaks down. Therefore, to compute the shadow and its self-similar structures, we must resort to extensive numerical integration of the geodesic equations, which we will describe in detail in the following chapter.
 \section{Strong-Field Gravitational Lensing and Multiple Imaging}
@@ -514,10 +541,10 @@ A critical requirement for evaluating the acceleration vector \(\bm{a} = -\tenso
 \begin{equation}
     \partial_\sigma g_{\mu\nu}(\bm{x}) \approx \frac{g_{\mu\nu}(\bm{x} + h \bm{e}_\sigma) - g_{\mu\nu}(\bm{x} - h \bm{e}_\sigma)}{2h}.
 \end{equation}
-This approach introduces two fundamental sources of error: a truncation error \(\mathcal{O}(h^2)\) and a round-off error \(\mathcal{O}(\epsilon_{\text{mach}} / h)\). This results in the characteristic "U"-shaped error curve, where the optimal step size must be delicately balanced. Crucially this is also metric agnostic allowing us to deal with any metric (whether it admits a Carter constant or not) the same way without any extra cost.
+This approach introduces two fundamental sources of error: a truncation error \(\mathcal{O}(h^2)\) and a round-off error \(\mathcal{O}(\epsilon_{\text{mach}} / h)\). This results in the characteristic "U"-shaped error curve, where the optimal step size must be delicately balanced. Crucially, this approach is also metric-agnostic, allowing us to deal with any metric (whether it admits a Carter constant or not) the same way without any extra cost.
 
 \subsection{Dual Numbers and the Chain Rule}
-To completely eliminate these numerical vulnerabilities, we implement the derivatives using Forward-Mode Automatic Differentiation \cite{Griewank2008-dl, Wengert1964-sd}. This method relies on the algebraic properties of dual numbers. We define the ring of dual numbers \(\mathbb{D}\) such that an element is represented as \(a + b\epsilon\), where \(\epsilon\) satisfies the fundamental property:
+To completely eliminate these numerical vulnerabilities, we implement the derivatives using Forward-Mode Automatic Differentiation \cite{Wengert1964-sd, Griewank2008-dl, Revels2016}. This method relies on the algebraic properties of dual numbers. We define the ring of dual numbers \(\mathbb{D}\) such that an element is represented as \(a + b\epsilon\), where \(\epsilon\) satisfies the fundamental property:
 \begin{equation}
     \epsilon^2 = 0, \quad \text{with} \quad \epsilon \neq 0.
 \end{equation}
@@ -705,6 +732,9 @@ extrapolation). The scalar error measure is taken in a component-wise weighted n
 which makes the tolerance scale-invariant across state components of disparate
 magnitude (here: coordinates versus four-velocity components).
 
+\section*{A Note on Computational Units}
+Throughout the computational implementation and the visualization of the results, we adopt a system of dimensionless geometrized units. Specifically, we set the gravitational constant, the speed of light, and the black hole mass to unity ($G = c = M = 1$). Consequently, all spatial distances, including the affine parameter and impact parameters, are expressed in units of $M$, while time is measured in units of $GM/c^3$. This convention simplifies the numerical integration and scales the phase-space variables naturally.
+
 \chapter{Setup}
 
 Having established the theoretical framework of stationary axisymmetric spacetimes and the geodesic equations governing null trajectories, we now proceed to describe the algorithms deployed to perform the black hole imaging.
@@ -714,7 +744,7 @@ Having established the theoretical framework of stationary axisymmetric spacetim
 To generate images of the shadow and the surrounding strongly lensed region, we adopt a backward ray-tracing paradigm. Unlike the standard forward approach, where photons are emitted from a source and tracked towards an observer, backward ray-tracing treats each pixel of the observer's screen as an independent initial condition for a null geodesic. This is possible due to the fact that, in the absence of scattering, light rays are reversible. 
 
 \subsection{Choice of Coordinate System}
-We begin by defining the observer's position. In our framework, we work any coordinates spherical \((t, r, \theta, \phi)\) or Cartesian \(t,x,y,z\), since our methodology allows for any metric expressed in any coordinate system. Our AD machinery alongside the geometric high-order integration scheme we use allow us to do so. Thus, our testbed became the Kerr black hole since it allows both coordinate expression (Boyer-Lindquist and Kerr-Schild) as well as the static Schwarzschild counterpart by setting $a=0$.
+We begin by defining the observer's position. In our framework, we work in any coordinates spherical \((t, r, \theta, \phi)\) or Cartesian \(t,x,y,z\), since our methodology allows for any metric expressed in any coordinate system. Our AD machinery alongside the geometric high-order integration scheme we use allow us to do so. Thus, our testbed became the Kerr black hole since it allows both coordinate expression (Boyer-Lindquist and Kerr-Schild) as well as the static Schwarzschild counterpart by setting $a=0$.
 
 In every case, there exists an event horizon which we need to deal with numerically. Therefore, our integrations are terminated at a radial distance of approximately \(r \approx 1.15 M\) to \(2 M\) (depending on the case), ensuring that the physical quantities remain well-defined and machine-precision accuracy is strictly maintained before the coordinate breakdown occurs.
 
@@ -743,7 +773,7 @@ For photons that escape to infinity, we map their final angular coordinates \((\
     u &= 1 - \frac{\mod(\phi - \pi, 2\pi)}{2\pi}, \\
     v &= \frac{\mod(\theta, \pi)}{\pi},
 \end{align}
-where \((u, v)\) correspond to the normalized horizontal and vertical pixel coordinates of the background image. To ensure the correctness of this mapping and the proper handedness of the celestial sphere, we perform a rigorous calibration step using a dedicated four-colour test image (with distinct quadrants of red, green, blue, and yellow). By verifying the correct orientation of the colours in the rendered shadow, we guarantee that our subsequent simulations using realistic Milky Way backgrounds produce physically accurate gravitational lensing. However different choices of tghe UV mapping result in different outputs and thus conventions.
+where \((u, v)\) correspond to the normalized horizontal and vertical pixel coordinates of the background image. To ensure the correctness of this mapping and the proper handedness of the celestial sphere, we perform a rigorous calibration step using a dedicated four-colour test image (with distinct quadrants of red, green, blue, and yellow). By verifying the correct orientation of the colours in the rendered shadow, we guarantee that our subsequent simulations using realistic Milky Way backgrounds produce physically accurate gravitational lensing. However different choices of the UV mapping result in different outputs and thus conventions.
 
 \begin{figure}[H]
     \centering
@@ -763,12 +793,11 @@ Furthermore, we demonstrate the effectiveness of the projection algorithm throug
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{figures/manifold_projection_static.png}
-    \caption{The ODE used for this figure is $\dot{x}=y, \dot{y}=-x$, thus the analytical solution is just a circle.
-    \textbf{Top}: The trajectory of the same initial condition using the typical RK4 using the manifold projection (blue) and without (red). \textbf{Middle and Bottom}: the behavior of the radius in time for the two cases we compare.}
+    \caption{Demonstration of the Manifold Projection algorithm on a simple harmonic oscillator ($\dot{x}=y, \dot{y}=-x$) constrained to a unit circle. \textbf{Left:} The phase-space trajectory integrated using a standard 4th-order Runge-Kutta scheme (red) exhibits inward spiraling (amplitude decay) due to unconstrained numerical drift, whereas the manifold-projected RK4 (blue) remains exactly on the constraint surface. \textbf{Right:} The evolution of the radial distance over time ($t \in [0, 10000]$ with step $dt=0.3$), explicitly showing the amplitude decay in the unconstrained method versus the exact conservation achieved by projection.}
     \label{fig:errors_projection}
 \end{figure}
 
-Our findings are presented in Fig.~\ref{fig:errors_projection}. In the absence of the geometric projection (red curve), the unconstrained integration leads to a systematic accumulation of truncation and round-off errors. While the trajectory may initially appear accurate, the errors in the conserved quantity grows significantly over time. On the contrary, the geometric integration technique (blue curve) preserves the expected behavior exactly. Moreso, this happens even in an almost trivial right-hand side expression. This numerical drift is particularly severe in our main problem, i.e. when the photons approach the unstable photon sphere, where the highly non-linear behaviour of the metric amplifies these deviations, eventually leading to unphysical trajectories.
+Our findings are presented in Fig.~\ref{fig:errors_projection}. In the absence of the geometric projection (red curve), the unconstrained integration leads to a systematic accumulation of truncation and round-off errors. While the trajectory may initially appear accurate, the errors in the conserved quantity grow significantly over time. On the contrary, the geometric integration technique (blue curve) preserves the expected behavior exactly. Furthermore, this happens even in an almost trivial right-hand side expression. This numerical drift is particularly severe in our main problem, i.e. when the photons approach the unstable photon sphere, where the highly non-linear behaviour of the metric amplifies these deviations, eventually leading to unphysical trajectories.
 
 \subsection{Fundamental Photon Orbits and Dynamics}
 
@@ -778,7 +807,7 @@ Now moving on to the relativistic trajectories in the near extremal ($a=0.998$) 
 Figures \ref{fig:err2}, \ref{fig:err1} and \ref{fig:err3} demonstrate the effectiveness of our method, and the layout is the following
 \begin{itemize}[align=left]
     \item[\textbf{Top Left}:] 
-    {On the top left we see the behavior of the radius as a percentage of the initial one,in order to show that there is no sudden jump (either ejection or plunge to the singularity)}.
+    {On the top left we see the behavior of the radius as a percentage of the initial one, in order to show that there is no sudden jump (either ejection or plunge to the singularity)}.
     \item[\textbf{Top Middle}:] The radius.
     
     \item[\textbf{Top Right}:] The full 3D trajectory of the evolution.
@@ -796,7 +825,7 @@ This class of orbits is particularly relevant for studies of gravitational lensi
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.9\linewidth]{figures/errors_V.png}
-    \caption{Scattering orbit.}
+    \caption{Numerical integration of a scattering orbit by a near-extremal Kerr black hole ($a=0.998, M=1$). The initial conditions correspond to an impact parameter slightly larger than the critical value ($|b| > b_c$). \textbf{Top Row (Left to Right):} Relative radial deviation showing the absence of discontinuous jumps, the radial distance $r(\lambda)$ exhibiting the characteristic "V" shape turnaround, and the full 3D spatial trajectory. \textbf{Bottom Row (Left to Right):} Relative errors in conserved energy ($\Delta E / E_0$), axial angular momentum ($\Delta L_z / L_{z0}$), and the absolute error of the null constraint ($g_{\mu\nu}u^\mu u^\nu$). The integration was performed using a 7th-order Verner method with Manifold Projection (tolerances set to $10^{-15}$), strictly bounding all errors near machine precision.}
     \label{fig:err2}
 \end{figure}
 
@@ -808,7 +837,7 @@ Because of this extreme sensitivity, the accurate numerical integration of these
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.9\linewidth]{figures/errors_stable.png}
-    \caption{(Almost) bound spiral orbit with a final capture.}
+	\caption{Numerical integration of a bound spiral orbit (transient capture) near the critical impact parameter ($|b| \approx b_c$) for a Kerr black hole ($a=0.998, M=1$). \textbf{Top Row:} Relative radial deviation, monotonic radial plunge $r(\lambda)$, and the 3D trajectory showing multiple revolutions around the unstable photon sphere before horizon penetration. \textbf{Bottom Row:} Evolution of errors in energy, angular momentum, and the null constraint. Despite the exponential sensitivity (Lyapunov divergence) in this region, the Manifold Projection algorithm maintains all invariant errors strictly below the $10^{-12}$ threshold until the trajectory reaches the event horizon.}
     \label{fig:err1}
 \end{figure}
 
@@ -820,14 +849,18 @@ In our ray-tracing framework, these photons will correspond to the dark pixels o
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.9\linewidth]{figures/errors.png}
-    \caption{Direct capture.}
+    \caption{Numerical integration of a direct capture orbit ($|b| < b_c$) in a Kerr spacetime ($a=0.998, M=1$). The photon lacks sufficient angular momentum to overcome the effective potential barrier. \textbf{Top Row:} Relative radial change, the rapidly decreasing radial distance $r(\lambda)$ towards the event horizon, and the 3D plunge trajectory. \textbf{Bottom Row:} Constraint errors along the affine parameter. The physical invariants remain conserved to machine precision, avoiding unphysical numerical oscillations near the coordinate singularity.} 
     \label{fig:err3}
 \end{figure}
-Finally, these three fundamental trajectory classes provide the complete mapping between the observer's impact parameters and the resulting image structure. They form the underlying physical basis for the astrophysical imaging we present in the following section. Moreover we have now proved that our method is capable to deal with all of them indiscriminately.
+Finally, these three fundamental trajectory classes provide the complete mapping between the observer's impact parameters and the resulting image structure. They form the underlying physical basis for the astrophysical imaging we present in the following section. Moreover, we have demonstrated that our method is capable of handling all of them indiscriminately.
+
 
 \section{Black Hole Shadow and Astrophysical Imaging}
 
-Having systematically classified and resolved the fundamental photon orbits, we now proceed to construct the images of the black hole as seen by a distant observer. This bridges the gap between the theoretical geodesic structure and observable astrophysical signatures, a key objective of modern strong-field gravity research.
+Having systematically classified and resolved the fundamental photon orbits, we now proceed to construct the images of the black hole as seen by a distant observer. This bridges the gap between the theoretical geodesic structure and observable astrophysical signatures, a key objective of modern strong-field gravity research. 
+
+To ensure full reproducibility and to provide the exact numerical context for our renderings, a comprehensive summary of the specific initial conditions, observer coordinates, grid resolutions, and integration tolerances utilized for each individual figure in this chapter is provided in Appendix A.
+
 \subsection{Gravitational Lensing of a Point Source}
 \label{sec:point_source_lensing}
 
@@ -862,16 +895,16 @@ The mathematical shadow of the black hole is defined by the boundary between the
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.5\linewidth]{figures/trace_rad_2000x2000_test.png}
-    \caption{The shadow of the (near-)extremal Kerr black hole (a=0.998) using the calibration image as a celestial sphere.}
+    \caption{Simulated shadow of a near-extremal Kerr black hole ($a=0.998, M=1$) illuminated by the four-colour calibration celestial sphere. The pronounced "D" shape of the mathematical shadow is a direct manifestation of frame-dragging, which breaks the equatorial symmetry. The distinct colour quadrants verify the correct orientation and handedness of the backward ray-tracing mapping.}
     \label{fig:placeholder1}
 \end{figure}
 
-Our numerical simulations accurately reproduce the well-known dependence of the shadow morphology on the spin parameter \(a\). For a non-rotating Schwarzschild black hole (\(a = 0\)), the shadow is perfectly circular. As the spin parameter increases towards the extreme Kerr limit (\(a \to 0.998\)), the shadow exhibits a pronounced asymmetry, taking on a characteristic "D" shape. This deformation is a direct consequence of frame-dragging: photons co-rotating with the black hole are pulled closer to the horizon before escaping, thus shifting the critical impact parameter and breaking the equatorial circularity. Our imaging framework naturally captures this transition without any ad-hoc assumptions, purely from the numerical solution of the geodesic equations. This allows us to now use any background image as a celestial sphere and have (more) realistic images.
+Our numerical simulations accurately reproduce the well-known dependence of the shadow morphology on the spin parameter \(a\). For a non-rotating Schwarzschild black hole (\(a = 0\)), the shadow is perfectly circular. As the spin parameter increases towards the extreme Kerr limit (\(a \to 0.998\)), the shadow exhibits a pronounced asymmetry, taking on a characteristic "D" shape. This deformation is a direct consequence of frame-dragging: photons co-rotating with the black hole are pulled closer to the horizon before escaping, thus shifting the critical impact parameter and breaking the equatorial circularity. Our imaging framework naturally captures this transition without any ad hoc assumptions, purely from the numerical solution of the geodesic equations. This allows us to now use any background image as a celestial sphere and have (more) realistic images.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.75\linewidth]{figures/trace_rad_3000x3000_milky_way(1).png}
-    \caption{The shadow of the (near-)extremal Kerr black hole (a=0.998) using a Milky Way image as a celestial sphere.}
+    \caption{Astrophysical visualization of the near-extremal Kerr black hole ($a=0.998$) shadow, utilizing a high-resolution Milky Way equirectangular panorama as the background celestial sphere. The image captures the extreme gravitational light bending, the primary and secondary image arcs, and the characteristic asymmetric boundary of the photon capture region.}
     \label{fig:placeholder}
 \end{figure}
 
@@ -879,7 +912,7 @@ Our numerical simulations accurately reproduce the well-known dependence of the 
 
 \subsection{Relativistic Accretion Disk and Radiative Transfer}
 
-To create astrophysically meaningful images, we extend our framework to include a geometrically thin accretion disk located in the equatorial plane. As described in the theoretical introduction to radiative transfer, the observed intensity \(I_{\text{obs}}\) accumulated along a ray is given by the integral:
+To create astrophysically meaningful images, we extend our framework to include a geometrically thin accretion disk \cite{Shakura1973, Luminet1979} located in the equatorial plane. As described in the theoretical introduction to radiative transfer, the observed intensity \(I_{\text{obs}}\) accumulated along a ray is given by the integral:
 \begin{equation}
 I_{\text{obs}} = \int_{\lambda_{\text{source}}}^{\lambda_{\text{obs}}} \gamma^2 \, j_0(r) \, d\lambda,
 \label{eq:rt_disk}
@@ -898,26 +931,26 @@ To explicitly visualize the impact of the spin parameter $a$ on the spacetime ge
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1.0\textwidth]{figures/bh_shadow_1000x1000_a000.png}
-    \caption{Relativistic accretion disk around a non-rotating Schwarzschild black hole ($a=0$). While the asymmetric brightness due to Doppler effect is still present, the central mathematical shadow remains a perfect circle, directly contrasting with the deformed "D" shape of the Kerr metric.}
+    \includegraphics[width=0.7\textwidth]{figures/bh_shadow_1000x1000_a000.png}
+    \caption{Simulated emission from a geometrically thin accretion disk around a non-rotating Schwarzschild black hole ($a=0, M=1$). The observed intensity exhibits strong left-right asymmetry due to relativistic Doppler boosting of the approaching plasma on the left side. In the absence of spacetime rotation, the central mathematical shadow bounded by the primary photon ring remains perfectly circular.}
     \label{fig:disk_schwarzschild}
 \end{figure}
 
-As shown in Fig.~\ref{fig:disk_schwarzschild}, in the absence of frame-dragging, the mathematical shadow bounded by the photon ring remains perfectly circular. While the kinematic Doppler effect still causes a strong left-right brightness asymmetry in the accretion disk, the underlying geometric boundary of the photon capture region is strictly isotropic. In stark contrast, Fig.~\ref{fig:disk_image} demonstrates how the extreme rotation of the Kerr spacetime drags the surrounding geometry, compressing the photon ring on the co-rotating side and elongating it on the counter-rotating side, thereby manifesting the characteristic "D" shape.
+As shown in Fig.~\ref{fig:disk_schwarzschild}, in the absence of frame-dragging, the mathematical shadow bounded by the photon ring remains perfectly circular. While the kinematic Doppler effect still causes a strong left-right brightness asymmetry in the accretion disk, the underlying geometric boundary of the photon capture region is strictly isotropic. In stark contrast, Fig.~\ref{fig:disk_image} demonstrates how the extreme rotation of the Kerr spacetime drags the surrounding geometry, compressing the photon ring on the co-rotating side and elongating it on the counter-rotating side, thereby manifesting the characteristic "D" shape \cite{Cunningham1975, EHT2019_V}.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1.0\textwidth]{figures/bh_shadow_1000x1000.png}
-    \caption{Thin disk accretion disk around a Kerr black hole ($a=0.998)$.}
+    \includegraphics[width=0.7\textwidth]{figures/bh_shadow_1000x1000.png}
+    \caption{Simulated emission from a geometrically thin accretion disk around a near-extremal Kerr black hole ($a=0.998$). In contrast to the Schwarzschild geometry, the extreme frame-dragging drastically deforms the spacetime. This results in the characteristic "D"-shaped compression of both the photon ring and the inner edge of the accretion disk on the co-rotating side.}
     \label{fig:disk_image}
 \end{figure}
 
-The combination of an (near)-extremal Kerr geometry, relativistic Doppler effect, and a realistic background demonstrates the full capability of our framework. These images not only serve as powerful visual tools for understanding strong-field gravity, but also provide a robust, numerically accurate platform for interpreting the horizon-scale observations from current and future interferometric campaigns such as the Event Horizon Telescope (EHT).
+The combination of an near-extremal Kerr geometry, relativistic Doppler effect, and a realistic background demonstrates the full capability of our framework. These images not only serve as powerful visual tools for understanding strong-field gravity, but also provide a robust, numerically accurate platform for interpreting the horizon-scale observations from current and future interferometric campaigns such as the Event Horizon Telescope (EHT).
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{figures/thin_disk_2000x2000_milky_way.png}
-    \caption{Thin disk accretion disk around a Kerr black hole ($a=0.998)$, with a realistic (Milky Way) celestial sphere.}
+    \caption{Comprehensive astrophysical rendering of a near-extremal Kerr black hole ($a=0.998$) featuring a geometrically thin accretion disk and a realistic Milky Way background. The visualization accurately resolves the primary disk emission subject to Doppler boosting, the strongly lensed image of the disk's far side wrapping over the poles, and the sharp hierarchy of higher-order photon sub-rings preserved by the geometric integration scheme.}
     \label{fig:disk_images}
 \end{figure}
 
@@ -958,49 +991,37 @@ By integrating the forward ray-tracer with differentiable programming techniques
 Such a differentiable pipeline would represent a significant advancement in the analysis of horizon-scale observations, bridging the gap between theoretical predictions and observational data in a computationally efficient and statistically rigorous manner.
 \newpage
 
-\bibliographystyle{abbrv}
-\bibliography{bib}
+\let\cleardoublepage\clearpage
 
-\end{document}
+\appendix
+\chapter{Simulation Configurations}
+\label{app:sim_parameters}
 
+The following table details the precise spatial parameters and initial observer configurations utilized in the Julia ray-tracing framework to generate the figures presented in Chapter 4. 
+
+\begin{table}[H]
+	\centering
+	\renewcommand{\arraystretch}{1.4}
+	\begin{tabular}{@{}l c c c@{}}
+		\toprule
+		\textbf{Figure} & \textbf{Radial Dist. $r_0$ ($M$)} & \textbf{Inclination $\theta_0$ ($^\circ$)} & \textbf{FOV Limits $\alpha, \beta$ ($M$)} \\
+		\midrule
+		\textbf{Fig. 4.2} (Scattering Orbit)   & $50.0$ & $85.0$ & N/A (Single Ray) \\
+		\textbf{Fig. 4.3} (Bound Spiral Orbit) & $2.5$  & $90.0$ & N/A (Single Ray) \\
+		\textbf{Fig. 4.4} (Direct Capture Orbit)& $50.0$ & $75.0$ & N/A (Single Ray) \\
+		\midrule
+		\textbf{Fig. 4.5} (Point Source) & $30.0$ & $87.5$ & $\alpha\in[-20, 20],\beta\in[-20,20]$ \\
+		\textbf{Fig. 4.6} (Calibration)  & $500.0$ & $87.5$ & $\alpha\in[-9, 9],\beta\in[-9, 9]$ \\
+		\textbf{Fig. 4.7} (MW Shadow)    & $30.0$ & $87.5$ & $\alpha\in[-30,30], \beta\in[-60,60]$ \\
+		\midrule
+		\textbf{Fig. 4.8} (Schw. Disk)   & $500.0$ & $87.5$ & $\alpha\in[-15,15], \beta\in[-15,15]$ \\
+		\textbf{Fig. 4.9} (Kerr Disk)    & $500.0$ & $87.5$ & $\alpha\in[-15,15], \beta\in[-15,15]$ \\
+		\textbf{Fig. 4.10} (Full Render) & $30.0$ & $87.5$ & $\alpha\in[-15,15], \beta\in[-15,15]$ \\
+		\bottomrule
+	\end{tabular}
+	\caption{Detailed configuration matrix outlining the initial observer radial distance, inclination angle, and Field of View (impact parameter bounds) for each corresponding figure.}
+	\label{tab:detailed_params}
+\end{table}
 \bibliographystyle{plain}
-\begin{thebibliography}{99}
-
-\bibitem{Bardeen1973}
-J.~M.~Bardeen.
-\newblock Timelike and null geodesics in the {Kerr} metric.
-\newblock {\em Black Holes (Les Astres Occlus)}, pages 215--240, 1973.
-
-\bibitem{Carter1968}
-B.~Carter.
-\newblock Global structure of the {Kerr} family of gravitational fields.
-\newblock {\em Physical Review}, 174(5):1559--1571, 1968.
-
-\bibitem{EHT2019}
-Event Horizon~Telescope Collaboration.
-\newblock First {M87} {Event} {Horizon} {Telescope} results. {I}. {The} shadow of the supermassive black hole.
-\newblock {\em The Astrophysical Journal Letters}, 875(1):L1, 2019.
-
-\bibitem{Gralla2019}
-S.~E.~Gralla, D.~E.~Holz, and R.~M.~Wald.
-\newblock Black hole shadows, photon rings, and lensing rings.
-\newblock {\em Physical Review D}, 100(2):024018, 2019.
-
-\bibitem{Hairer2006}
-E.~Hairer, C.~Lubich, and G.~Wanner.
-\newblock {\em Geometric Numerical Integration: Structure-Preserving Algorithms for Ordinary Differential Equations}.
-\newblock Springer Science \& Business Media, 2nd edition, 2006.
-
-\bibitem{Revels2016}
-J.~Revels, M.~Lubin, and T.~Papamarkou.
-\newblock {Forward-Mode} automatic differentiation in {Julia}.
-\newblock {\em arXiv preprint arXiv:1607.07892}, 2016.
-
-\bibitem{Younsi2012}
-Z.~Younsi, K.~Wu, and S.~V.~Fuerst.
-\newblock General relativistic radiative transfer: formulation and emission from structured tori around black holes.
-\newblock {\em Astronomy \& Astrophysics}, 545:A13, 2012.
-
-\end{thebibliography}
-
+\bibliography{bib}
 \end{document}

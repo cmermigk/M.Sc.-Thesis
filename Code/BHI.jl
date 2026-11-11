@@ -28,7 +28,7 @@ include("integrator.jl")
 include("physics.jl")
 include("shadow.jl")
 
-const background = Images.load(joinpath(@__DIR__, "background_images", "test_image.jpg"))#milky_way Τ(30.0) alims, blims -12,12
+const background = Images.load(joinpath(@__DIR__, "background_images", "milky_way.jpg"))#milky_way Τ(30.0) alims, blims -12,12
 const h, w = size(background)
 # const init_r = T(500.0)
 const init_r = T(30.0) 

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2026.8.27)  20 OCT 2026 23:39
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2026.8.27)  21 OCT 2026 09:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1020,24 +1020,10 @@ Dictionary: translator-theorem-dictionary, Language: English
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
  (./Msc_presentation.nav)
-Overfull \hbox (41.80276pt too wide) in paragraph at lines 23--23
- [][]  \T1/lmss/m/n/5 ([])  
- []
-
 Missing character: There is no 5 ("35) in font nullfont!
-
-Overfull \hbox (41.80276pt too wide) has occurred while \output is active
- [][]  \T1/lmss/m/n/5 ([])  
- []
-
 [1
 
-] (./Msc_presentation.toc)
-Overfull \hbox (41.80276pt too wide) has occurred while \output is active
- [][]  \T1/lmss/m/n/5 ([])  
- []
-
-[2
+] (./Msc_presentation.toc) [2
 
 ]
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
@@ -1045,11 +1031,6 @@ LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
 
 Missing character: There is no 1 ("31) in font nullfont!
 Missing character: There is no 3 ("33) in font nullfont!
-
-Overfull \hbox (41.80276pt too wide) has occurred while \output is active
- [][]  \T1/lmss/m/n/5 ([])  
- []
-
 [3
 
 ]
@@ -1077,19 +1058,9 @@ LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <5> not available
 
 Missing character: There is no 1 ("31) in font nullfont!
 Missing character: There is no 9 ("39) in font nullfont!
-
-Overfull \hbox (41.80276pt too wide) has occurred while \output is active
- [][]  \T1/lmss/m/n/5 ([])  
- []
-
 [4
 
-]
-Overfull \hbox (41.80276pt too wide) has occurred while \output is active
- [][]  \T1/lmss/m/n/5 ([])  
- []
-
-[5
+] [5
 
 ]
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <9> not available
@@ -1100,19 +1071,9 @@ LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <9> not available
 (Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 99.
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <6> not available
 (Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 99.
+ [6
 
-Overfull \hbox (41.80276pt too wide) has occurred while \output is active
- [][]  \T1/lmss/m/n/5 ([])  
- []
-
-[6
-
-]
-Overfull \hbox (41.80276pt too wide) has occurred while \output is active
- [][]  \T1/lmss/m/n/5 ([])  
- []
-
-[7
+] [7
 
 ]
 Missing character: There is no 2 ("32) in font nullfont!
@@ -1122,21 +1083,11 @@ LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <14.4> not available
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <14.4> not available
 (Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 143.
 
-
-Overfull \hbox (41.80276pt too wide) has occurred while \output is active
- [][]  \T1/lmss/m/n/5 ([])  
- []
-
 [8
 
 ]
 Missing character: There is no 3 ("33) in font nullfont!
 Missing character: There is no 0 ("30) in font nullfont!
-
-Overfull \hbox (41.80276pt too wide) has occurred while \output is active
- [][]  \T1/lmss/m/n/5 ([])  
- []
-
 [9
 
 ]
@@ -1146,153 +1097,73 @@ File: figures/FDvsAD.png Graphic file (type bmp)
 Overfull \vbox (2.40813pt too high) detected at line 166
  []
 
-
-Overfull \hbox (41.80276pt too wide) has occurred while \output is active
- [][]  \T1/lmss/m/n/5 ([])  
- []
-
 [10
 
-]
-Overfull \hbox (41.80276pt too wide) has occurred while \output is active
- [][]  \T1/lmss/m/n/5 ([])  
- []
+] [11
 
-[11
+] [12
 
-]
-Overfull \hbox (41.80276pt too wide) has occurred while \output is active
- [][]  \T1/lmss/m/n/5 ([])  
- []
-
-[12
-
-]
-Overfull \hbox (41.80276pt too wide) has occurred while \output is active
- [][]  \T1/lmss/m/n/5 ([])  
- []
-
-[13
+] [13
 
 ]
 File: figures/manifold_projection_static.png Graphic file (type bmp)
 <figures/manifold_projection_static.png>
+ [14
 
-Overfull \hbox (41.80276pt too wide) has occurred while \output is active
- [][]  \T1/lmss/m/n/5 ([])  
- []
-
-[14
-
-]
-Overfull \hbox (41.80276pt too wide) has occurred while \output is active
- [][]  \T1/lmss/m/n/5 ([])  
- []
-
-[15
+] [15
 
 ]
 File: figures/errors_V.png Graphic file (type bmp)
 <figures/errors_V.png>
-
-Overfull \hbox (41.80276pt too wide) has occurred while \output is active
- [][]  \T1/lmss/m/n/5 ([])  
- []
-
-[16
+ [16
 
 ]
 File: figures/errors_stable.png Graphic file (type bmp)
 <figures/errors_stable.png>
-
-Overfull \hbox (41.80276pt too wide) has occurred while \output is active
- [][]  \T1/lmss/m/n/5 ([])  
- []
-
-[17
+ [17
 
 ]
 File: figures/errors_cap.png Graphic file (type bmp)
 <figures/errors_cap.png>
-
-Overfull \hbox (41.80276pt too wide) has occurred while \output is active
- [][]  \T1/lmss/m/n/5 ([])  
- []
-
-[18
+ [18
 
 ]
 Missing character: There is no 3 ("33) in font nullfont!
 Missing character: There is no 5 ("35) in font nullfont!
-
-Overfull \hbox (41.80276pt too wide) has occurred while \output is active
- [][]  \T1/lmss/m/n/5 ([])  
- []
-
 [19
 
 ]
 File: figures/test_image.jpg Graphic file (type bmp)
 <figures/test_image.jpg>
-
-Overfull \hbox (41.80276pt too wide) has occurred while \output is active
- [][]  \T1/lmss/m/n/5 ([])  
- []
-
-[20
+ [20
 
 ]
 File: figures/edu.png Graphic file (type bmp)
 <figures/edu.png>
-
-Overfull \hbox (41.80276pt too wide) has occurred while \output is active
- [][]  \T1/lmss/m/n/5 ([])  
- []
-
-[21
+ [21
 
 ]
 File: figures/trace_rad_2000x2000_test.png Graphic file (type bmp)
 <figures/trace_rad_2000x2000_test.png>
-
-Overfull \hbox (41.80276pt too wide) has occurred while \output is active
- [][]  \T1/lmss/m/n/5 ([])  
- []
-
-[22
+ [22
 
 ]
 File: figures/dot.jpg Graphic file (type bmp)
 <figures/dot.jpg>
 File: figures/trace_rad_1000x1000_dot_shadow.png Graphic file (type bmp)
 <figures/trace_rad_1000x1000_dot_shadow.png>
-
-Overfull \hbox (41.80276pt too wide) has occurred while \output is active
- [][]  \T1/lmss/m/n/5 ([])  
- []
-
-[23
+ [23
 
 ]
 File: figures/milky_way.jpg Graphic file (type bmp)
 <figures/milky_way.jpg>
-
-Overfull \hbox (41.80276pt too wide) has occurred while \output is active
- [][]  \T1/lmss/m/n/5 ([])  
- []
-
-[24
+ [24
 
 ]
 File: figures/milkyway_tracing.png Graphic file (type bmp)
 <figures/milkyway_tracing.png>
 
 Overfull \vbox (2.91492pt too high) detected at line 377
- []
-
-
-Overfull \hbox (41.80276pt too wide) has occurred while \output is active
- [][]  \T1/lmss/m/n/5 ([])  
  []
 
 [25
@@ -1302,21 +1173,11 @@ File: figures/fd_a0.png Graphic file (type bmp)
 <figures/fd_a0.png>
 File: figures/fd_a0998.png Graphic file (type bmp)
 <figures/fd_a0998.png>
-
-Overfull \hbox (41.80276pt too wide) has occurred while \output is active
- [][]  \T1/lmss/m/n/5 ([])  
- []
-
-[26
+ [26
 
 ]
 Missing character: There is no 4 ("34) in font nullfont!
 Missing character: There is no 0 ("30) in font nullfont!
-
-Overfull \hbox (41.80276pt too wide) has occurred while \output is active
- [][]  \T1/lmss/m/n/5 ([])  
- []
-
 [27
 
 ]
@@ -1355,11 +1216,6 @@ section about errors.
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-
-Overfull \hbox (41.80276pt too wide) has occurred while \output is active
- [][]  \T1/lmss/m/n/5 ([])  
- []
-
 [28
 
 ]
@@ -1369,26 +1225,11 @@ File: figures/thin_disk_2000x2000_milky_way.png Graphic file (type bmp)
 Overfull \vbox (6.58716pt too high) detected at line 450
  []
 
-
-Overfull \hbox (41.80276pt too wide) has occurred while \output is active
- [][]  \T1/lmss/m/n/5 ([])  
- []
-
 [29
 
-]
-Overfull \hbox (41.80276pt too wide) has occurred while \output is active
- [][]  \T1/lmss/m/n/5 ([])  
- []
+] [30
 
-[30
-
-]
-Overfull \hbox (41.80276pt too wide) has occurred while \output is active
- [][]  \T1/lmss/m/n/5 ([])  
- []
-
-[31
+] [31
 
 ]
 \tf@nav=\write6
@@ -1407,7 +1248,7 @@ Package rerunfilecheck Info: File `Msc_presentation.out' has not changed.
 Here is how much of TeX's memory you used:
  24020 strings out of 476191
  473171 string characters out of 5812072
- 739119 words of memory out of 5000000
+ 739017 words of memory out of 5000000
  44228 multiletter control sequences out of 15000+600000
  549370 words of font info for 102 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
